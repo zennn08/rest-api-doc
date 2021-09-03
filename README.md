@@ -40,19 +40,17 @@ _Download video and audio from tiktok_
 
 - **Response:**
 
-| Code |       Response        |
-| :--: | :-------------------: |
-| 200  |        Success        |
-| 400  |      Bad Request      |
-| 500  | Internal Server Error |
+  | Code |       Response        |
+  | :--: | :-------------------: |
+  | 200  |        Success        |
+  | 400  |      Bad Request      |
+  | 500  | Internal Server Error |
 
 - **Sample Call:**
 
   ```js
   const fetch = require("node-fetch");
-  fetch(
-    "http://aqulzz.herokuapp.com/tiktok?url=https://vt.tiktok.com/ZSJxEbYNN/"
-  )
-    .then((res) => res.json())
-    .then(console.log());
+  fetch("http://aqulzz.herokuapp.com/tiktok?url=https://vt.tiktok.com/ZSJxEbYNN/");
+    .then((res) => res.json());
+    .then(console.log);
   ```
